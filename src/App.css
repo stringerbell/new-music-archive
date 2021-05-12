@@ -23,58 +23,105 @@ time, mark, audio, video {
     font: inherit;
     vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
     display: block;
 }
+
 body {
     line-height: 1;
 }
+
 ol, ul {
     list-style: none;
 }
+
 blockquote, q {
     quotes: none;
 }
+
 blockquote:before, blockquote:after,
 q:before, q:after {
     content: '';
     content: none;
 }
+
 table {
     border-collapse: collapse;
     border-spacing: 0;
 }
+
 /****/
 body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-family: -apple-system,BlinkMacSystemFont,"Apple Color Emoji","SF Pro","SF Pro Icons","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
+
 .App {
     display: grid;
     margin: 2rem;
 }
+
 .album-art {
     position: relative;
+    max-width: 100%;
     top: 0;
     box-shadow: rgba(0, 0, 0, 0.24) 0 3px 8px;
     transition: top ease 0.3s;
     border-radius: 4px;
 }
+
+.modal-album-art {
+    position: relative;
+    max-width: 100%;
+    top: 0;
+    box-shadow: rgba(0, 0, 0, 0.24) 0 3px 8px;
+    transition: top ease 0.3s;
+    border-radius: 4px;
+}
+
 .album-art:hover {
     top: -3px;
+    cursor: pointer;
 }
+
 .album-art:active {
     top: 2px;
 }
+
 .album-name {
     display: grid;
     margin-top: .3rem;
     color: #939397;
 }
+
+.modal-wrapper {
+    display: grid;
+    align-items: center;
+}
+.modal-wrapper a {
+    display: grid;
+    justify-content: center;
+}
+
+.modal-album-name {
+    display: grid;
+    margin-top: 1rem;
+    color: rgba(0, 0, 0, 0.85);
+    font-size: 1.5rem;
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+    grid-auto-flow: column;
+    grid-gap: 1rem;
+}
+
 .explicit {
+    display: inline-block;
     color: #89898D;
 }
+
 .artist-name {
     color: #131313;
     margin-top: .5rem;
@@ -86,6 +133,24 @@ body {
     /* this is for the explicit badge */
     margin-right: -2px;
 }
+.modal-artist-name {
+    color: #fa233b;
+    display: grid;
+    justify-content: center;
+    font-size: x-large;
+    line-height: 2rem;
+}
+.modal-album-genre {
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 12px;
+    justify-content: center;
+    display: grid;
+    margin-top: .3rem;
+}
+.modal-album-details {
+    display: grid;
+}
 .album-list {
     justify-content: center;
     grid-auto-flow: row;
@@ -93,3 +158,14 @@ body {
     grid-template-columns: repeat(auto-fill, 200px);
     grid-gap: 2rem;
 }
+
+.modal-editors-notes {
+    color: rgba(0, 0, 0, 0.50);
+    line-height: 18px;
+    font-size: 13px;
+    margin-top: 2rem;
+}
+i {
+    font-style: italic;
+}
+

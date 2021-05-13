@@ -31,12 +31,17 @@ function Album({album}) {
         <Modal
             isOpen={modalIsOpen}
             onRequestClose={closeModal}
-            // style={customStyles}
+            className={'modal'}
             contentLabel={`${attributes.artistName} - ${attributes.name} album details`}
         >
+            <div className={'close-wrapper'}>
+                <button className={'close-modal-btn'} onClick={closeModal} type={"button"} aria-label={"close"}>×
+                </button>
+            </div>
             <div className={'modal-wrapper'}>
                 <a href={attributes.url}>
-                    <Artwork title={title} className={'modal-album-art'} width={400} height={400} artwork={attributes.artwork}
+                    <Artwork title={title} className={'modal-album-art'} width={400} height={400}
+                             artwork={attributes.artwork}
                              alt={`${attributes.artistName} - ${attributes.name} album artwork`}/>
                 </a>
                 <div className={'modal-album-details'}>
@@ -54,12 +59,11 @@ function Album({album}) {
                     <div className={"modal-album-genre"}>
                         {genre} - {year}
                     </div>
-                    <div>
+                    <div className={'modal-notes-wrap'}>
                         <p className={'modal-editors-notes'} dangerouslySetInnerHTML={setNotes(notes)}/>
                     </div>
                 </div>
             </div>
-            {/*<button onClick={closeModal}>close</button>*/}
         </Modal>
 
         <Artwork title={title} width={200} height={200} artwork={attributes.artwork}

@@ -54,8 +54,12 @@ table {
 }
 
 /****/
+html {
+    background: rgba(0, 0, 0, .9);
+}
+
 body {
-    font-family: -apple-system,BlinkMacSystemFont,"Apple Color Emoji","SF Pro","SF Pro Icons","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Apple Color Emoji", "SF Pro", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .App {
@@ -100,6 +104,7 @@ body {
     display: grid;
     align-items: center;
 }
+
 .modal-wrapper a {
     display: grid;
     justify-content: center;
@@ -108,7 +113,7 @@ body {
 .modal-album-name {
     display: grid;
     margin-top: 1rem;
-    color: rgba(0, 0, 0, 0.85);
+    color: rgba(255, 255, 255, 0.85);
     font-size: 1.5rem;
     font-weight: bold;
     align-items: center;
@@ -119,11 +124,11 @@ body {
 
 .explicit {
     display: inline-block;
-    color: #89898D;
+    color: #89898d;
 }
 
 .artist-name {
-    color: #131313;
+    color: #dbdbdb;
     margin-top: .5rem;
     display: grid;
     font-weight: bolder;
@@ -133,6 +138,7 @@ body {
     /* this is for the explicit badge */
     margin-right: -2px;
 }
+
 .modal-artist-name {
     color: #fa233b;
     display: grid;
@@ -140,17 +146,20 @@ body {
     font-size: x-large;
     line-height: 2rem;
 }
+
 .modal-album-genre {
     text-transform: uppercase;
-    color: rgba(0, 0, 0, 0.5);
+    color: rgba(255, 255, 255, 0.5);
     font-size: 12px;
     justify-content: center;
     display: grid;
     margin-top: .3rem;
 }
+
 .modal-album-details {
     display: grid;
 }
+
 .album-list {
     justify-content: center;
     grid-auto-flow: row;
@@ -159,12 +168,52 @@ body {
     grid-gap: 2rem;
 }
 
+.close-wrapper {
+    display: grid;
+    justify-content: end;
+}
+
+.close-modal-btn {
+    background: none;
+    border: none;
+    font-size: xx-large;
+    color: whitesmoke;
+}
+
+.close-modal-btn:hover {
+    cursor: pointer;
+}
+
+.modal {
+    position: absolute;
+    inset: 40px;
+    border: 1px solid rgb(59, 59, 59);
+    background: rgba(0, 0, 0, 0.9);
+    overflow: auto;
+    border-radius: 4px;
+    outline: none;
+    padding: 20px;
+}
+
+.ReactModal__Overlay {
+    position: fixed;
+    inset: 0px;
+    background-color: rgba(0, 0, 0, 0.75) !important;
+}
+
+.modal-notes-wrap {
+    display: grid;
+    max-width: 400px;
+    justify-self: center;
+}
+
 .modal-editors-notes {
-    color: rgba(0, 0, 0, 0.50);
+    color: rgba(255, 255, 255, 0.50);
     line-height: 18px;
     font-size: 13px;
     margin-top: 2rem;
 }
+
 i {
     font-style: italic;
 }

@@ -25,6 +25,20 @@ export default function Album({album}) {
             isOpen={modalIsOpen}
             onRequestClose={closeModal}
             className={'modal'}
+            style={{
+                content: {
+                    top: '50%',
+                    left: '50%',
+                    right: 'auto',
+                    bottom: 'auto',
+                    marginRight: '-50%',
+                    transform: 'translate(-50%, -50%)',
+                    border: '1px solid rgb(59, 59, 59)',
+                background: 'rgba(0, 0, 0, 0.9)',
+                    height: '500px',
+                    overflow: 'scroll' // <-- This tells the modal to scrol
+                }
+            }}
             contentLabel={`${attributes.artistName} - ${attributes.name} album details`}
         >
             <div className={'close-wrapper'}>

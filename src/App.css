@@ -171,6 +171,8 @@ body {
 .close-wrapper {
     display: grid;
     justify-content: end;
+    margin-top: -1rem;
+    margin-right: -1rem;
 }
 
 .close-modal-btn {
@@ -193,6 +195,10 @@ body {
     border-radius: 4px;
     outline: none;
     padding: 20px;
+}
+
+.ReactModal__Body--open {
+    overflow: hidden;
 }
 
 .ReactModal__Overlay {

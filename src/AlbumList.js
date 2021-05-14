@@ -1,5 +1,6 @@
 import {useEffect, useState} from "react";
 import Album from "./Album";
+import {format} from 'date-fns'
 
 export default function NewAlbumList() {
     const [albums, setAlbums] = useState([])
@@ -23,7 +24,7 @@ export default function NewAlbumList() {
         <>
             <label htmlFor="dates">Choose a date:</label>
             <select name="dates" onChange={(e) => setDate(e.target.value)}>
-                {dates.map(d => <option key={d} value={d}>{d}</option>)}
+                {dates.map(d => <option key={d} value={d}>{format(new Date(d), 'eeee, MMM do, yyyy')}</option>)}
             </select>
             <div className={"album-list"}>{as}</div>
         </>

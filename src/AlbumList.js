@@ -23,7 +23,7 @@ export default function NewAlbumList() {
     return (
         <>
             <label htmlFor="dates">Choose a date:</label>
-            <select name="dates" onChange={(e) => setDate(e.target.value)}>
+            <select className={'date-selection'} name="dates" onChange={(e) => setDate(e.target.value)}>
                 {dates.map(d => <option key={d} value={d}>{format(new Date(d), 'eeee, MMM do, yyyy')}</option>)}
             </select>
             <div className={"album-list"}>{as}</div>

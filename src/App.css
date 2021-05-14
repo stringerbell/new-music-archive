@@ -204,7 +204,7 @@ body {
 .ReactModal__Overlay {
     position: fixed;
     inset: 0px;
-    background-color: rgba(0, 0, 0, 0.75) !important;
+    background-color: rgba(0, 0, 0, 0.75);
 }
 
 .modal-notes-wrap {
@@ -222,5 +222,16 @@ body {
 
 i {
     font-style: italic;
+}
+
+.date-selection {
+    height: 2rem;
+    display: grid;
+    margin-bottom: 2rem;
+    background-color: rgba(0, 0, 0, 0.75);
+    color: rgba(255, 255, 255, 0.50);
+    font-size: larger;
+    font-weight: bold;
+    max-width: 500px;
 }
 

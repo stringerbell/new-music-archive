@@ -204,7 +204,7 @@ body {
 .ReactModal__Overlay {
     position: fixed;
     inset: 0px;
-    background-color: rgba(0, 0, 0, 0.75);
+    background-color: rgba(0, 0, 0, 0.75) !important;
 }
 
 .modal-notes-wrap {

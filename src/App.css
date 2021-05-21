@@ -120,6 +120,7 @@ body {
     justify-content: center;
     grid-auto-flow: column;
     grid-gap: 1rem;
+    text-align: center;
 }
 
 .explicit {
@@ -145,6 +146,7 @@ body {
     justify-content: center;
     font-size: x-large;
     line-height: 2rem;
+    text-align: center;
 }
 
 .modal-album-genre {
@@ -158,6 +160,7 @@ body {
 
 .modal-album-details {
     display: grid;
+    max-width: 400px;
 }
 
 .album-list {
@@ -218,6 +221,21 @@ body {
     line-height: 18px;
     font-size: 13px;
     margin-top: 2rem;
+    text-align: justify;
+}
+
+.modal-editors-notes br {
+    display: block;
+    line-height: 7rem;
+    margin: 1rem;
+    content: "!";
+}
+
+.modal-editors-notes b {
+    font-weight: bold;
+    display: block;
+    margin-top: 1rem;
+    font-size: larger;
 }
 
 i {

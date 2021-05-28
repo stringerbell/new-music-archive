@@ -1,0 +1,3 @@
+curl 'https://amp-api.music.apple.com/v1/editorial/us/rooms/976405703/contents?l=en-us' \
+  -H 'authorization: Bearer :token \
+  > "./public/archive/$1.json"

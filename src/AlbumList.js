@@ -5,6 +5,7 @@ export default function NewAlbumList() {
     const [albums, setAlbums] = useState([])
     let [cache, addCache] = useState({})
     const dates = [
+        {date: '2021-07-23', name: "Friday, July 23rd 2021"},
         {date: '2021-07-16', name: "Friday, July 16th 2021"},
         {date: '2021-07-09', name: "Friday, July 9th 2021"},
         {date: '2021-07-02', name: "Friday, July 2nd 2021"},

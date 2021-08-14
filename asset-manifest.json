@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "https://stringerbell.github.io/new-music-archive/static/css/main.b7ad0622.chunk.css",
-    "main.js": "https://stringerbell.github.io/new-music-archive/static/js/main.208cf895.chunk.js",
-    "main.js.map": "https://stringerbell.github.io/new-music-archive/static/js/main.208cf895.chunk.js.map",
-    "runtime-main.js": "https://stringerbell.github.io/new-music-archive/static/js/runtime-main.f3c12d03.js",
-    "runtime-main.js.map": "https://stringerbell.github.io/new-music-archive/static/js/runtime-main.f3c12d03.js.map",
-    "static/js/2.638780d6.chunk.js": "https://stringerbell.github.io/new-music-archive/static/js/2.638780d6.chunk.js",
-    "static/js/2.638780d6.chunk.js.map": "https://stringerbell.github.io/new-music-archive/static/js/2.638780d6.chunk.js.map",
-    "static/js/3.2e9dd0a5.chunk.js": "https://stringerbell.github.io/new-music-archive/static/js/3.2e9dd0a5.chunk.js",
-    "static/js/3.2e9dd0a5.chunk.js.map": "https://stringerbell.github.io/new-music-archive/static/js/3.2e9dd0a5.chunk.js.map",
-    "index.html": "https://stringerbell.github.io/new-music-archive/index.html",
-    "static/css/main.b7ad0622.chunk.css.map": "https://stringerbell.github.io/new-music-archive/static/css/main.b7ad0622.chunk.css.map",
-    "static/js/2.638780d6.chunk.js.LICENSE.txt": "https://stringerbell.github.io/new-music-archive/static/js/2.638780d6.chunk.js.LICENSE.txt"
+    "main.css": "/new-music-archive/static/css/main.b7ad0622.chunk.css",
+    "main.js": "/new-music-archive/static/js/main.208cf895.chunk.js",
+    "main.js.map": "/new-music-archive/static/js/main.208cf895.chunk.js.map",
+    "runtime-main.js": "/new-music-archive/static/js/runtime-main.7a558c37.js",
+    "runtime-main.js.map": "/new-music-archive/static/js/runtime-main.7a558c37.js.map",
+    "static/js/2.638780d6.chunk.js": "/new-music-archive/static/js/2.638780d6.chunk.js",
+    "static/js/2.638780d6.chunk.js.map": "/new-music-archive/static/js/2.638780d6.chunk.js.map",
+    "static/js/3.2e9dd0a5.chunk.js": "/new-music-archive/static/js/3.2e9dd0a5.chunk.js",
+    "static/js/3.2e9dd0a5.chunk.js.map": "/new-music-archive/static/js/3.2e9dd0a5.chunk.js.map",
+    "index.html": "/new-music-archive/index.html",
+    "static/css/main.b7ad0622.chunk.css.map": "/new-music-archive/static/css/main.b7ad0622.chunk.css.map",
+    "static/js/2.638780d6.chunk.js.LICENSE.txt": "/new-music-archive/static/js/2.638780d6.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.f3c12d03.js",
+    "static/js/runtime-main.7a558c37.js",
     "static/js/2.638780d6.chunk.js",
     "static/css/main.b7ad0622.chunk.css",
     "static/js/main.208cf895.chunk.js"

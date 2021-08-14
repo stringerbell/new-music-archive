@@ -4,10 +4,12 @@ import {
     BrowserRouter as Router,
     Switch,
     Route,
+    Redirect
 } from "react-router-dom";
-import Dates from "./Dates";
+import useDates from "./Dates";
 
 function App() {
+    const dates = useDates()
     return (
         <Router>
         <div className="App">
@@ -15,6 +17,7 @@ function App() {
             <Route path={'/:date'}>
                 <NewAlbumList />}/>
             </Route>
+            <Redirect to={`/${dates[0].date}`} />
             </Switch>
         </div>
         </Router>

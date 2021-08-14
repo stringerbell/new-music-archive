@@ -14,10 +14,10 @@ function App() {
         <Router>
         <div className="App">
             <Switch>
-            <Route path={'/:date'}>
+            <Route path={'/new-music-archive/:date'}>
                 <NewAlbumList />}/>
             </Route>
-            <Redirect to={`/${dates[0].date}`} />
+            <Redirect to={`/new-music-archive/${dates[0].date}`} />
             </Switch>
         </div>
         </Router>

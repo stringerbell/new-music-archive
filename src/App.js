@@ -11,13 +11,13 @@ import useDates from "./Dates";
 function App() {
     const dates = useDates()
     return (
-        <Router>
+        <Router basename={`${process.env.PUBLIC_URL}`}>
         <div className="App">
             <Switch>
-            <Route path={'/new-music-archive/:date'}>
+            <Route path={`/:date`}>
                 <NewAlbumList />}/>
             </Route>
-            <Redirect to={`/new-music-archive/${dates[0].date}`} />
+            <Redirect to={`/${dates[0].date}`} />
             </Switch>
         </div>
         </Router>

@@ -40,7 +40,7 @@ export default function NewAlbumList() {
             <select className={'date-selection'} value={date.date} name="dates"
                     onChange={(e) => {
                         setDate({date: e.target.value})
-                        history.push(`/new-music-archive/${e.target.value}`)
+                        history.push(`/${e.target.value}`)
                     }}>
                 {dates.map(({name, date}) => {
                     return (<option key={date} value={date}>{name}</option>)

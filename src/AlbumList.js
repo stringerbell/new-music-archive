@@ -18,9 +18,6 @@ export default function NewAlbumList() {
         }
     }
     const [date, setDate] = useState(dates[picked])
-    useEffect(() => {
-        setDate(dates[picked])
-    }, [])
 
     useEffect(() => {
         (async ({date}) => {

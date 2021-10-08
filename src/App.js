@@ -15,7 +15,7 @@ function App() {
         <div className="App">
             <Switch>
             <Route path={`/:date`}>
-                <NewAlbumList />}/>
+                <NewAlbumList />
             </Route>
             <Redirect to={`/${dates[0].date}`} />
             </Switch>

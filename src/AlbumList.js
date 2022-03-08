@@ -43,8 +43,8 @@ export default function NewAlbumList() {
                     return (<option key={date} value={date}>{name}</option>)
                 })}
             </select>
-            <div className={"album-list"}>{albums.map((album) => {
-                return <Album album={album} key={album.id}/>
+            <div className={"album-list"}>{albums.map((album, i) => {
+                return <Album idx={i} album={album} key={album.id}/>
             })}</div>
         </>
     )

@@ -1,6 +1,7 @@
 import {useState} from "react";
 import Modal from "react-modal";
 import Artwork from "./Artwork";
+import {Link, useParams} from "react-router-dom";
 
 Modal.setAppElement('#root')
 
@@ -8,7 +9,8 @@ const get = p => o =>
     p.reduce((xs, x) =>
         (xs && xs[x]) ? xs[x] : null, o)
 
-export default function Album({album}) {
+export default function Album({album, idx}) {
+    const {date: dateP} = useParams()
     const [modalIsOpen, setIsOpen] = useState(false);
     const {attributes} = album
     const notes = get(['editorialNotes', 'standard'])(attributes)
@@ -20,6 +22,7 @@ export default function Album({album}) {
     }
     const genre = attributes.genreNames.filter((a) => a !== 'Music')[0]
     const year = new Date(attributes.releaseDate).getFullYear();
+    const albumURL = new URL(album.attributes.url)
     return <div className={'album'}>
         <Modal
             isOpen={modalIsOpen}
@@ -46,11 +49,11 @@ export default function Album({album}) {
                 </button>
             </div>
             <div className={'modal-wrapper'}>
-                <a href={attributes.url}>
+                <Link to={`/${dateP}/${idx}${albumURL.pathname}`}>
                     <Artwork title={title} className={'modal-album-art'} width={400} height={400}
                              artwork={attributes.artwork}
                              alt={`${attributes.artistName} - ${attributes.name} album artwork`}/>
-                </a>
+                </Link>
                 <div className={'modal-album-details'}>
                     <div>
                         <h1 className={"modal-album-name"}>

@@ -253,3 +253,77 @@ i {
     max-width: 500px;
 }
 
+/** detail page **/
+
+.album-art {
+    position: relative;
+    max-width: 100%;
+    top: 0;
+    box-shadow: rgba(0, 0, 0, 0.24) 0 3px 8px;
+    transition: top ease 0.3s;
+    border-radius: 4px;
+}
+.wrapper {
+    display: grid;
+    align-items: center;
+}
+.wrapper a {
+    display: grid;
+    justify-content: center;
+}
+.detail-album-name {
+    display: grid;
+    margin-top: 1rem;
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 1.5rem;
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+    grid-auto-flow: column;
+    grid-gap: 1rem;
+    text-align: center;
+}
+.detail-artist-name {
+    color: #fa233b;
+    display: grid;
+    justify-content: center;
+    font-size: x-large;
+    line-height: 2rem;
+    text-align: center;
+}
+.album-genre {
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 12px;
+    justify-content: center;
+    display: grid;
+    margin-top: .3rem;
+}
+.detail-album-details {
+    display: grid;
+}
+.notes-wrap {
+    display: grid;
+    max-width: 650px;
+    justify-self: center;
+}
+.detail-editors-notes {
+    color: rgba(255, 255, 255, 0.50);
+    line-height: 18px;
+    font-size: 13px;
+    margin-top: 2rem;
+    text-align: justify;
+}
+.detail-editors-notes br {
+    display: block;
+    line-height: 7rem;
+    margin: 1rem;
+    content: "!";
+}
+
+.detail-editors-notes b {
+    font-weight: bold;
+    display: block;
+    margin-top: 1rem;
+    font-size: larger;
+}

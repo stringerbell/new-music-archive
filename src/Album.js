@@ -2,8 +2,6 @@ import {useState} from "react";
 import Modal from "react-modal";
 import Artwork from "./Artwork";
 import {Link, useParams} from "react-router-dom";
-import appleMusic from "./apple-badge.svg";
-import spotify from "./Spotify_Icon_RGB_Green.png";
 import ListenLinks from "./ListenLinks";
 
 Modal.setAppElement('#root')

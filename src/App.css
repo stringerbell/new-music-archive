@@ -338,3 +338,20 @@ i {
     text-decoration: underline;
     font-weight: bolder;
 }
+.listen-links {
+    display: grid;
+    text-align: center;
+    grid-auto-flow: column;
+    color: white;
+    grid-gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.spotify-link {
+    width: 42px;
+}
+.apple-music-link {
+    width: 42px;
+}

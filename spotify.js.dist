@@ -1,0 +1,53 @@
+const clientId = '<CLIENT_ID>';
+const clientSecret = '<CLIENT_SECRET>';
+const filename = 'public/archive/<filename>'
+
+var details = {
+    'grant_type': 'client_credentials'
+};
+
+var formBody = [];
+for (var property in details) {
+    var encodedKey = encodeURIComponent(property);
+    var encodedValue = encodeURIComponent(details[property]);
+    formBody.push(encodedKey + "=" + encodedValue);
+}
+formBody = formBody.join("&");
+
+const token = "<TOKEN>"
+
+if (token === null) {
+    const res = await fetch("https://accounts.spotify.com/api/token", {
+        method: 'POST',
+        headers: {
+            'Authorization': `Basic ${(new Buffer(clientId + ':' + clientSecret).toString('base64'))}`,
+            'Content-Type': 'application/x-www-form-urlencoded'
+        },
+        body: formBody
+    });
+    const {access_token: token} = await res.json()
+}
+
+import * as fs from "fs";
+
+let release = fs.readFileSync(`${filename}`);
+let releases = JSON.parse(release);
+
+for (let datum of releases.data) {
+    const attributes = datum.attributes;
+    let albumName = attributes.name
+    let artist = attributes.artistName
+    let date = new Date(attributes.releaseDate)
+
+    const search = await fetch(`https://api.spotify.com/v1/search?type=album&include_external=audio&type=album&limit=1&q=${albumName}+year:${date.getFullYear()}+artist:${artist}`, {
+        headers: {
+            Authorization: `Bearer ${token}`,
+            "Content-Type": "application/json",
+        }
+    })
+    let j = await search.json()
+    attributes.spotify = j.albums.items[0]?.external_urls?.spotify
+    console.log(`plugging in ${attributes.spotify || `nothing for ${albumName} - ${artist}`}\n`)
+}
+
+fs.writeFileSync(filename, JSON.stringify(releases))

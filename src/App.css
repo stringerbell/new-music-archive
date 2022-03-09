@@ -327,3 +327,14 @@ i {
     margin-top: 1rem;
     font-size: larger;
 }
+
+.back-link {
+    color: rgba(255, 255, 255, 0.50);
+    font-size: 22px;
+    margin-bottom: 1rem;
+    text-decoration: none;
+}
+.back-link:hover {
+    text-decoration: underline;
+    font-weight: bolder;
+}

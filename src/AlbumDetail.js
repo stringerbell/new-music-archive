@@ -1,5 +1,6 @@
 import Artwork from './Artwork';
 import { Link, useParams } from 'react-router-dom';
+import ListenLinks from "./ListenLinks";
 
 const get = (p) => (o) => p.reduce((xs, x) => (xs && xs[x] ? xs[x] : null), o);
 
@@ -22,12 +23,12 @@ export default function AlbumDetail({ album }) {
         <div className={'wrapper'}>
           <a href={attributes.url}>
             <Artwork
-              title={title}
-              className={'album-art'}
-              width={650}
-              height={650}
-              artwork={attributes.artwork}
-              alt={`${attributes.artistName} - ${attributes.name} album artwork`}
+                title={title}
+                className={'album-art'}
+                width={650}
+                height={650}
+                artwork={attributes.artwork}
+                alt={`${attributes.artistName} - ${attributes.name} album artwork`}
             />
           </a>
           <div className={'detail-album-details'}>
@@ -45,10 +46,11 @@ export default function AlbumDetail({ album }) {
             <div className={'album-genre'}>
               {genre} - {year}
             </div>
+            <ListenLinks attributes={attributes}/>
             <div className={'notes-wrap'}>
               <p
-                className={'detail-editors-notes'}
-                dangerouslySetInnerHTML={setNotes(notes)}
+                  className={'detail-editors-notes'}
+                  dangerouslySetInnerHTML={setNotes(notes)}
               />
             </div>
           </div>

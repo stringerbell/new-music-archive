@@ -2,6 +2,9 @@ import {useState} from "react";
 import Modal from "react-modal";
 import Artwork from "./Artwork";
 import {Link, useParams} from "react-router-dom";
+import appleMusic from "./apple-badge.svg";
+import spotify from "./Spotify_Icon_RGB_Green.png";
+import ListenLinks from "./ListenLinks";
 
 Modal.setAppElement('#root')
 
@@ -69,6 +72,7 @@ export default function Album({album, idx}) {
                     <div className={"modal-album-genre"}>
                         {genre} - {year}
                     </div>
+                    <ListenLinks attributes={attributes}/>
                     <div className={'modal-notes-wrap'}>
                         <p className={'modal-editors-notes'} dangerouslySetInnerHTML={setNotes(notes)}/>
                     </div>

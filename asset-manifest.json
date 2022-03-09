@@ -1,22 +1,24 @@
 {
   "files": {
-    "main.css": "/new-music-archive/static/css/main.7273e400.chunk.css",
-    "main.js": "/new-music-archive/static/js/main.986ab433.chunk.js",
-    "main.js.map": "/new-music-archive/static/js/main.986ab433.chunk.js.map",
-    "runtime-main.js": "/new-music-archive/static/js/runtime-main.6dfa2f08.js",
-    "runtime-main.js.map": "/new-music-archive/static/js/runtime-main.6dfa2f08.js.map",
-    "static/js/2.38291a86.chunk.js": "/new-music-archive/static/js/2.38291a86.chunk.js",
-    "static/js/2.38291a86.chunk.js.map": "/new-music-archive/static/js/2.38291a86.chunk.js.map",
-    "static/js/3.0999ed3d.chunk.js": "/new-music-archive/static/js/3.0999ed3d.chunk.js",
-    "static/js/3.0999ed3d.chunk.js.map": "/new-music-archive/static/js/3.0999ed3d.chunk.js.map",
+    "main.css": "/new-music-archive/static/css/main.82734a4a.chunk.css",
+    "main.js": "/new-music-archive/static/js/main.fbde061f.chunk.js",
+    "main.js.map": "/new-music-archive/static/js/main.fbde061f.chunk.js.map",
+    "runtime-main.js": "/new-music-archive/static/js/runtime-main.f98d2a82.js",
+    "runtime-main.js.map": "/new-music-archive/static/js/runtime-main.f98d2a82.js.map",
+    "static/js/2.d29f95f9.chunk.js": "/new-music-archive/static/js/2.d29f95f9.chunk.js",
+    "static/js/2.d29f95f9.chunk.js.map": "/new-music-archive/static/js/2.d29f95f9.chunk.js.map",
+    "static/js/3.d9a42507.chunk.js": "/new-music-archive/static/js/3.d9a42507.chunk.js",
+    "static/js/3.d9a42507.chunk.js.map": "/new-music-archive/static/js/3.d9a42507.chunk.js.map",
     "index.html": "/new-music-archive/index.html",
-    "static/css/main.7273e400.chunk.css.map": "/new-music-archive/static/css/main.7273e400.chunk.css.map",
-    "static/js/2.38291a86.chunk.js.LICENSE.txt": "/new-music-archive/static/js/2.38291a86.chunk.js.LICENSE.txt"
+    "static/css/main.82734a4a.chunk.css.map": "/new-music-archive/static/css/main.82734a4a.chunk.css.map",
+    "static/js/2.d29f95f9.chunk.js.LICENSE.txt": "/new-music-archive/static/js/2.d29f95f9.chunk.js.LICENSE.txt",
+    "static/media/Spotify_Icon_RGB_Green.cd66b8f6.png": "/new-music-archive/static/media/Spotify_Icon_RGB_Green.cd66b8f6.png",
+    "static/media/apple-badge.0349686e.svg": "/new-music-archive/static/media/apple-badge.0349686e.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.6dfa2f08.js",
-    "static/js/2.38291a86.chunk.js",
-    "static/css/main.7273e400.chunk.css",
-    "static/js/main.986ab433.chunk.js"
+    "static/js/runtime-main.f98d2a82.js",
+    "static/js/2.d29f95f9.chunk.js",
+    "static/css/main.82734a4a.chunk.css",
+    "static/js/main.fbde061f.chunk.js"
   ]
 }

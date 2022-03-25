@@ -22,14 +22,14 @@ export default function AlbumDetail({ album }) {
       </Link>
       <MetaTags>
         <title>{`${attributes.artistName} - ${attributes.name}`}</title>
-        <meta name='description' content={attributes.editorialNotes.short} />
+        <meta name='description' content={title} />
         <meta property='og:title' content={attributes.name} />
 
         <meta property='og:url' content={window.location.href} />
         <meta property='og:type' content='website' />
         <meta
           property='og:description'
-          content={attributes.editorialNotes.short}
+          content={title}
         />
         <meta
           property='og:image'
@@ -44,7 +44,7 @@ export default function AlbumDetail({ album }) {
         <meta name='twitter:title' content={attributes.name} />
         <meta
           name='twitter:description'
-          content={attributes.editorialNotes.short}
+          content={title}
         />
         <meta
           name='twitter:image'

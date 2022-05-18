@@ -21,9 +21,11 @@ export default function Album({album, idx}) {
     const setNotes = (notes) => {
         return {__html: notes};
     }
-    const genre = attributes.genreNames.filter((a) => a !== 'Music')[0]
+    console.log({attributes})
+    const genre = attributes.genreNames?.filter((a) => a !== 'Music')[0] ?? ''
     const year = new Date(attributes.releaseDate).getFullYear();
     const albumURL = new URL(album.attributes.url)
+
     return <div className={'album'}>
         <Modal
             isOpen={modalIsOpen}

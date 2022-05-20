@@ -3,6 +3,7 @@ import Modal from "react-modal";
 import Artwork from "./Artwork";
 import {Link, useParams} from "react-router-dom";
 import ListenLinks from "./ListenLinks";
+import useGenre from "./useGenre";
 
 Modal.setAppElement('#root')
 
@@ -21,8 +22,7 @@ export default function Album({album, idx}) {
     const setNotes = (notes) => {
         return {__html: notes};
     }
-    console.log({attributes})
-    const genre = attributes.genreNames?.filter((a) => a !== 'Music')[0] ?? ''
+    const genre = useGenre(album)
     const year = new Date(attributes.releaseDate).getFullYear();
     const albumURL = new URL(album.attributes.url)
 

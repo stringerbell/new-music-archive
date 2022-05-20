@@ -2,18 +2,19 @@ import Artwork from './Artwork';
 import { Link, useParams } from 'react-router-dom';
 import ListenLinks from './ListenLinks';
 import { MetaTags } from 'react-meta-tags';
-
-const get = (p) => (o) => p.reduce((xs, x) => (xs && xs[x] ? xs[x] : null), o);
+import useGenre from "./useGenre";
+import useNotes from "./useNotes";
+import useTitle from "./useTitle";
 
 export default function AlbumDetail({ album }) {
   const { attributes } = album;
   const { date } = useParams();
-  const notes = get(['editorialNotes', 'standard'])(attributes);
-  const title = get(['editorialNotes', 'short'])(attributes);
+  const notes = useNotes(album);
+  const title = useTitle(album);
   const setNotes = (notes) => {
     return { __html: notes };
   };
-  const genre = attributes.genreNames.filter((a) => a !== 'Music')[0];
+  const genre = useGenre(album)
   const year = new Date(attributes.releaseDate).getFullYear();
   return (
     <>

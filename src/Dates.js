@@ -1,14 +1,15 @@
 export default function useDates() {
     return (
         [
-            {date: '2023-02-24', name: "Friday, February 24th 2022"},
-            {date: '2023-02-17', name: "Friday, February 17th 2022"},
-            {date: '2023-02-10', name: "Friday, February 10th 2022"},
-            {date: '2023-02-03', name: "Friday, February 3rd 2022"},
-            {date: '2023-01-27', name: "Friday, January 27th 2022"},
-            {date: '2023-01-20', name: "Friday, January 20th 2022"},
-            {date: '2023-01-13', name: "Friday, January 13th 2022"},
-            {date: '2023-01-06', name: "Friday, January 6th 2022"},
+            {date: '2023-03-03', name: "Friday, March 3rd 2023"},
+            {date: '2023-02-24', name: "Friday, February 24th 2023"},
+            {date: '2023-02-17', name: "Friday, February 17th 2023"},
+            {date: '2023-02-10', name: "Friday, February 10th 2023"},
+            {date: '2023-02-03', name: "Friday, February 3rd 2023"},
+            {date: '2023-01-27', name: "Friday, January 27th 2023"},
+            {date: '2023-01-20', name: "Friday, January 20th 2023"},
+            {date: '2023-01-13', name: "Friday, January 13th 2023"},
+            {date: '2023-01-06', name: "Friday, January 6th 2023"},
             {date: '2022-12-30', name: "Friday, December 30th 2022"},
             {date: '2022-12-23', name: "Friday, December 23rd 2022"},
             {date: '2022-12-09', name: "Friday, December 9th 2022"},

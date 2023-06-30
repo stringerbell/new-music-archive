@@ -1,6 +1,7 @@
 export default function useDates() {
     return (
         [
+            {date: '2023-06-30', name: "Friday, June 30th 2023"},
             {date: '2023-06-23', name: "Friday, June 23rd 2023"},
             {date: '2023-06-16', name: "Friday, June 16th 2023"},
             {date: '2023-06-09', name: "Friday, June 9th 2023"},

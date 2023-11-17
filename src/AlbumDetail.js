@@ -5,6 +5,7 @@ import { MetaTags } from 'react-meta-tags';
 import useGenre from "./useGenre";
 import useNotes from "./useNotes";
 import useTitle from "./useTitle";
+import useImageURL from "./useImageURL";
 
 export default function AlbumDetail({ album }) {
   const { attributes } = album;
@@ -34,9 +35,7 @@ export default function AlbumDetail({ album }) {
         />
         <meta
           property='og:image'
-          content={attributes.artwork.url
-            .replaceAll('{w}', 650)
-            .replaceAll('{h}', 650)}
+          content={useImageURL({rawURL: attributes.artwork.url, width: 650, height: 650})}
         />
 
         <meta name='twitter:card' content='summary_large_image' />
@@ -49,9 +48,7 @@ export default function AlbumDetail({ album }) {
         />
         <meta
           name='twitter:image'
-          content={attributes.artwork.url
-            .replaceAll('{w}', 650)
-            .replaceAll('{h}', 650)}
+          content={useImageURL({rawURL: attributes.artwork.url, width: 650, height: 650})}
         />
       </MetaTags>
       <div className={'album'}>

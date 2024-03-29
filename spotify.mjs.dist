@@ -1,4 +1,5 @@
-const date = '<YYYY-MM-DD>';
+const date =
+'<YYYY-MM-DD>';
 const filename = `public/archive/<filename>${date}.json`;
 const clientId = '<CLIENT_ID>';
 const clientSecret = '<CLIENT_SECRET>';
@@ -32,8 +33,8 @@ let releases = JSON.parse(release);
 
 for (let datum of Object.values(releases.resources.albums)) {
     const attributes = datum.attributes;
-    let albumName = attributes.name
-    let artist = attributes.artistName
+    let albumName = encodeURIComponent(attributes.name)
+    let artist = encodeURIComponent(attributes.artistName)
     let date = new Date(attributes.releaseDate)
 
     const search = await fetch(`https://api.spotify.com/v1/search?type=album&include_external=audio&type=album&limit=1&q=${albumName}+year:${date.getFullYear()}+artist:${artist}`, {

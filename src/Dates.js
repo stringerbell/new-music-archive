@@ -1,6 +1,7 @@
 export default function useDates() {
     return (
         [
+            {date: '2025-02-14', name: "Friday, February 14th 2025"},
             {date: '2025-02-07', name: "Friday, February 7th 2025"},
             {date: '2025-01-31', name: "Friday, January 31st 2025"},
             {date: '2025-01-31', name: "Friday, January 31st 2025"},

@@ -171,6 +171,13 @@ body {
     grid-gap: 2rem;
 }
 
+@media (max-width: 500px) {
+    .album-list {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1rem;
+    }
+}
+
 .close-wrapper {
     display: grid;
     justify-content: end;
